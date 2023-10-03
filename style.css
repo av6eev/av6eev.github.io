@@ -26,15 +26,6 @@ body {
     background-color: var(--clr-bg);
 }
 
-.light {
-    --clr-bg: #fcfcfc;
-    --clr-bg-alt: #fff;
-    --clr-fg: #555;
-    --clr-fg-alt: #444;
-    --clr-primary: #7544d5;
-    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
 .dark {
     --clr-bg: #0a192f;
     --clr-bg-alt: #2a2f4c;
@@ -50,7 +41,6 @@ body {
     color: var(--clr-bg);
 }
 
-::-webkit-selection,
 ::selection {
     background: var(--clr-primary);
     color: var(--clr-bg);
@@ -204,7 +194,7 @@ button {
 .btn--plain {
     text-transform: initial;
     background-color: var(--clr-bg-alt);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 3px 3px 0;
     border: 0;
 }
 
@@ -329,6 +319,10 @@ main {
     text-align: center;
     box-shadow: var(--shadow);
     transition: transform 0.2s linear;
+}
+
+.project__title {
+    color: var(--clr-primary);
 }
 
 .project:hover {
