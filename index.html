@@ -1,7 +1,241 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;500;700&display=swap"
+            rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+    <script
+            src="https://kit.fontawesome.com/fa62c117c7.js"
+            crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Авдеев Арсений</title>
+</head>
+<body class="dark" id="top">
+    <header class="header center">
+    <h3>
+        <a href="https://av6eev.github.io" class="link">AA</a>
+    </h3>
+
+    <nav class="nav center">
+        <ul class="nav__list center">
+            <li class="nav__list-item">
+                <a class="link link--nav" href="#education">Образование</a>
+            </li>
+            <li class="nav__list-item">
+                <a class="link link--nav" href="#projects">Проекты</a>
+            </li>
+            <li class="nav__list-item">
+                <a class="link link--nav" href="#contact">Контакты</a>
+            </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+                type="button"
+                aria-label="toggle navigation"
+                class="btn btn--icon nav__hamburger"
+        >
+            <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+    </nav>
+</header>
+
+    <main>
+    <!-- About -->
+    <div class="about center">
+        <h1>Привет, я <span class="about__name">Авдеев Арсений</span></h1>
+        <h2 class="about__role">Стремлюсь стать разработчиком игр</h2>
+        <p class="about__desc">
+            Мне 21 год. Родом из города Волгоград, Россия. <br>
+            В текущее время занимаюсь дополнением своего портфолио различного рода маленькими играми и пэт-проектами. В них я пытаюсь применять и изучать различные паттерны проектирования и SOLID. <br>
+            Имею опыт участия в пяти региональных хакатонах среди которых был Приволжский IT-Хаб, где я занял 2 место. Благодаря нему, прошел во Всероссийский финал, где занял 7 место.
+        </p>
+
+        <div class="about__contact center">
+            <a href="https://example.com">
+                <span class="btn btn--outline">Resume</span>
+            </a>
+
+            <a
+                    href="https://github.com/rajshekhar26"
+                    aria-label="github"
+                    class="link link--icon"
+            >
+                <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <section id="education" class="section education">
+        <div class="">
+            <h2 class="section__title">Образование</h2>
+                <div>
+                    <h4>Бакалавриат</h4>
+                    <div class="education__item">
+                        <p>Математика и компьютерные науки</p>
+                        <p>Волгоградский Государственный Университет</p>
+                        <p>2019 - 2023</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1em">
+                    <h4>Магистратура</h4>
+                    <div class="education__item">
+                        <p>Математика</p>
+                        <p>Волгоградский Государственный Университет</p>
+                        <p>2023 - 2025</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+        <h2 class="section__title">Проекты</h2>
+
+        <div class="projects__grid">
+            <div class="project">
+                <h3>Asteroids Unity</h3>
+                <p class="project__description">
+                    Игра про летящий космический корабль, который уничтожает астероиды. Референсом проекта является знаменитая аркадная игра Asteroids.
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">C#</li>
+                    <li class="project__stack-item">MVP</li>
+                    <li class="project__stack-item">Unity</li>
+                </ul>
+                <a
+                        href="https://github.com/av6eev/Asteroids"
+                        aria-label="source code"
+                        class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a
+                        href="https://example.com"
+                        class="link link--text"
+                >
+                    см. полностью
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Asteroids Godot</h3>
+                <p class="project__description">
+                    Игра про летящий космический корабль, который уничтожает астероиды. Референсом проекта является знаменитая аркадная игра Asteroids.
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">C#</li>
+                    <li class="project__stack-item">MVP</li>
+                    <li class="project__stack-item">Godot</li>
+                </ul>
+                <a
+                        href="https://github.com"
+                        aria-label="source code"
+                        class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a
+                        href="https://example.com"
+                        class="link link--text"
+                >
+                    см. полностью
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Fight in the gloom</h3>
+                <p class="project__description">
+                    Кооперативная пошаговая игра для двоих человек через Discord-бота. Главная цель - сокрушить соперника на арене.
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">C#</li>
+                    <li class="project__stack-item">MVP</li>
+                    <li class="project__stack-item">Unity</li>
+                    <li class="project__stack-item">Discord API</li>
+                </ul>
+                <a
+                        href="https://github.com/av6eev/educational-project-3"
+                        aria-label="source code"
+                        class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a
+                        href="https://example.com"
+                        class="link link--text"
+                >
+                    см. полностью
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>EP-4</h3>
+                <p class="project__description">
+                    Проект, наполненный следующими механиками: заполнение пола по ячейкам, заданным в эдиторе; выбор и размещение зданий по гриду; диалоговая система; переключение этажей у строения.
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">C#</li>
+                    <li class="project__stack-item">MVP</li>
+                    <li class="project__stack-item">Unity</li>
+                    <li class="project__stack-item">Mathematics</li>
+                </ul>
+                <a
+                        href="https://github.com/av6eev/educational-project-4"
+                        aria-label="source code"
+                        class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a
+                        href="https://example.com"
+                        class="link link--text"
+                >
+                    см. полностью
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <h2 class="section__title">Contact</h2>
+        <div class="contact__grid">
+            <span class="contact__link btn email__link"><i class="fa fa-google"></i> av6eev@gmail.com</span>
+            <a href="https://t.me/av6eev" class="contact__link">
+                <span class="telegram-link btn"><i class="fa fa-telegram"></i> Telegram me</span>
+            </a>
+        </div>
+    </section>
+</main>
+
+    <footer class="footer"></footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+            <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+</div>
+
+    <script src="script.js"></script>
 </body>
 </html>
