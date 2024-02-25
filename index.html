@@ -34,6 +34,9 @@
                 <a class="link link--nav" href="#education">Образование</a>
             </li>
             <li class="nav__list-item">
+                <a class="link link--nav" href="#work">Работа</a>
+            </li>
+            <li class="nav__list-item">
                 <a class="link link--nav" href="#projects">Проекты</a>
             </li>
             <li class="nav__list-item">
@@ -59,8 +62,6 @@
             Мне 21 год. Родом из города Волгоград, Россия.
             <br><br>
             В текущее время занимаюсь дополнением своего портфолио различного рода маленькими играми и пэт-проектами. В них я пытаюсь применять и изучать различные паттерны проектирования и SOLID.
-            <br><br>
-            Имею опыт участия в пяти региональных хакатонах среди которых был Приволжский IT-Хаб, где я занял 2 место. Благодаря ему, прошел во Всероссийский финал, получив 7 место.
         </p>
         <div class="about__contact center">
             <a href="https://github.com/av6eev">
@@ -74,7 +75,7 @@
         <div class="">
             <h2 class="section__title">Образование</h2>
                 <div>
-                    <h4>Бакалавриат</h4>
+                    <h4 class="section__subtitle">Бакалавриат</h4>
                     <div class="education__item">
                         <p>Математика и компьютерные науки</p>
                         <p>Волгоградский Государственный Университет</p>
@@ -83,7 +84,7 @@
                 </div>
 
                 <div style="margin-top: 1em">
-                    <h4>Магистратура</h4>
+                    <h4 class="section__subtitle">Магистратура</h4>
                     <div class="education__item">
                         <p>Математика</p>
                         <p>Волгоградский Государственный Университет</p>
@@ -93,13 +94,93 @@
         </div>
     </section>
 
+    <!-- Education -->
+    <section id="work" class="section work">
+        <div class="">
+            <h2 class="section__title">Работа</h2>
+            <div>
+                <h4 class="section__subtitle">Волгоградский Государственный Университет</h4>
+                <div class="work__item">
+                    <p>Преподаватель курса по C#</p>
+                    <p>2021 - 2022</p>
+                </div>
+            </div>
+            <div style="margin-top: 1em">
+                <h4 class="section__subtitle">Rebotica</h4>
+                <div class="work__item">
+                    <p>Преподаватель Unity</p>
+                    <p>Ноябрь 2023 - сейчас</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Projects -->
     <section id="projects" class="section projects">
         <h2 class="section__title">Проекты</h2>
 
         <div class="projects__grid">
+
             <div class="project">
-                <h3 class="project__title">Asteroids Unity</h3>
+                <h3 class="project__title">Space Adventure</h3>
+                <p class="project__subdescription">
+                    текущий проект
+                </p>
+                <p class="project__description">
+                    Прототип со следующими механиками: zero-gravity управление кораблем, система чанков и генерация астероидов в них.
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">C#</li>
+                    <li class="project__stack-item">MVP</li>
+                    <li class="project__stack-item">Unity</li>
+                </ul>
+                <a
+                        href="https://github.com/av6eev/SpaceAdventure"
+                        aria-label="source code"
+                        class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a
+                        href=""
+                        class="link link--text"
+                >
+                    см. полностью
+                </a>
+            </div>
+
+            <div class="project">
+                <h3 class="project__title">Space Adventure Library</h3>
+                <p class="project__subdescription">
+                    текущий проект
+                </p>
+                <p class="project__description">
+                    Своя библиотека, которая содержит необходимый набор функционала для быстрого прототипирования игр.
+                </p>
+                <ul class="project__stack">
+                    <li class="project__stack-item">C#</li>
+                </ul>
+                <a
+                        href="https://github.com/av6eev/SpaceAdventureLib"
+                        aria-label="source code"
+                        class="link link--icon"
+                >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                </a>
+                <a
+                        href=""
+                        class="link link--text"
+                >
+                    см. полностью
+                </a>
+            </div>
+
+            <div class="project">
+                <h3 class="project__title">Asteroids</h3>
+                <p class="project__subdescription">
+                    образовательный проект
+                </p>
                 <p class="project__description">
                     Игра про летящий космический корабль, который уничтожает астероиды. Референсом проекта является знаменитая аркадная игра Asteroids.
                 </p>
@@ -124,32 +205,10 @@
             </div>
 
             <div class="project">
-                <h3 class="project__title">Asteroids Godot</h3>
-                <p class="project__description">
-                    Игра про летящий космический корабль, который уничтожает астероиды. Референсом проекта является знаменитая аркадная игра Asteroids.
-                </p>
-                <ul class="project__stack">
-                    <li class="project__stack-item">C#</li>
-                    <li class="project__stack-item">MVP</li>
-                    <li class="project__stack-item">Godot</li>
-                </ul>
-                <a
-                        href="https://github.com/av6eev/AsteroidsGodot"
-                        aria-label="source code"
-                        class="link link--icon"
-                >
-                    <i aria-hidden="true" class="fab fa-github"></i>
-                </a>
-                <a
-                        href="./projects/asteroids_godot.html"
-                        class="link link--text"
-                >
-                    см. полностью
-                </a>
-            </div>
-
-            <div class="project">
                 <h3 class="project__title">Fight in the gloom</h3>
+                <p class="project__subdescription">
+                    образовательный проект
+                </p>
                 <p class="project__description">
                     Пошаговая игра-файтер для двоих. Главная цель - сокрушить соперника на арене, используя лишь реакции в Discord чате.
                 </p>
@@ -176,6 +235,9 @@
 
             <div class="project">
                 <h3 class="project__title">EP-4</h3>
+                <p class="project__subdescription">
+                    образовательный проект
+                </p>
                 <p class="project__description">
                     Проект, наполненный следующими механиками: заполнение пола по ячейкам, заданным в эдиторе; выбор и размещение зданий по гриду; диалоговая система; переключение этажей у строения.
                 </p>
