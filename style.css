@@ -132,6 +132,10 @@ button {
     font-size: 1em;
 }
 
+.link--resume {
+    color: var(--clr-primary);
+}
+
 .link--icon {
     color: var(--clr-fg);
     font-size: 1.2rem;
