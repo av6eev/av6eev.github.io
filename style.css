@@ -145,6 +145,7 @@ button {
     color: var(--clr-fg);
     font-size: .9rem;
     padding-left: .3em;
+    font-family: 'Fira Code', monospace;
 }
 
 .email__link {
@@ -389,8 +390,16 @@ main {
     color: var(--clr-fg-alt);
 }
 
+.project__link_description {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--clr-fg-alt);
+}
+
 .project .link--icon {
     margin-left: 0.5em;
+    align-items: center;
+    align-content: center;
 }
 
 .contact__grid {
