@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Review this part and modify it to your liking -->
+    <meta name="description" content="Sample text for portfolio template meta tag">
+    <meta name="keywords" content="Sample text for portfolio template meta tag">
+    <meta name="author" content="Sample text for portfolio template meta tag">
+    <title>About me</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-about-me.css">
+    <!-- font for the quote -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <!-- font for the body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <!-- font for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="sticky">
+        <label for="drop" class="toggle" id="main-toggle">
+            <span class="nav-icon"></span>
+        </label>
+        <input type="checkbox" id="drop">
+        <ul class="main-nav">
+            <li><a href="index.html">Домой</a></li>
+            <li><a href="about-me.html">Обо мне</a></li>
+            <li><a href="skill-set.html">Навыки</a></li>
+            <li><a href="portfolio.html">Проекты</a></li>
+            <li><a href="index.html#contact-me">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- about me -->
+    <!-- section1 - introduction -->
+    <section class="grid-system-2 w-900 padding">
+        <section class="center align-center">
+            <img class="max-width" src="static/assets/about-me1.png" alt="picture-of-me">
+        </section>
+        <section class="justify">
+            <h2 class="main-title-large">Обо мне</h2>
+            <p>Меня зовут Арсений.</p>
+            <p>Мне 22 года. Я родом из России, города Волгоград.</p>
+            <p>На протяжении 6 лет занимаюсь изучением программирования, 4 из которых направлены на C# и игровой движок Unity.
+            <p>Работаю разработчиком казуальных игр в студии Butcher's Games, параллельно подрабатывая преподавателем курса разработки игр на Unity и C# в компании Rebotica.</p>
+                В свободное время занимаюсь дополнением своего портфолио различного рода играми и пэт-проектами. В них я пытаюсь применять и изучать различные новые технологии, паттерны проектирования и SOLID.</p>
+            <p class="quote uppercase center"><span class="colorful-letter">Practice </span> makes progress</p>
+        </section>
+    </section>
+
+
+    <!-- section2 - background story -->
+    <!-- use this section to tell, why did you choose programming -->
+    <section class="grid-system-2 w-900 padding">
+        <section class="justify">
+            <h2 class="main-title-large center">C чего все начиналось</h2>
+            <p>Толчком к программированию послужил кружок по изучению Pascal в школе.
+                По окончанию школы я заинтересовался курсом web-программирования в государственном университете моего города, куда я, в последствии, поступил.
+                Преподаватель этого курса, в дальнейшем, стал разработчиком игр. Именно он, позже, вдохновит на это и меня.
+            </p>
+            <p>За время обучения в университете я успел поработать, в нем же, преподавателем курсов программирования на языке C# и игрового дизайна.</p>
+        </section>
+        <section class="center align-center">
+            <img class="max-width" src="static/assets/about-me2.png" alt="story-of-myself">
+        </section>
+    </section>
+
+    <!-- section4 - hobbies -->
+    <section class="margin-trbl10">
+        <section>
+            <h3 class="main-title center padding">Хобби и увлечения</h3>
+        </section>
+        <section class="grid-system-2 w-900">
+            <section class="card small-card justify">
+                <img class="box margin-auto hobbies" src="static/assets/plot-reading.png" alt="hobbies2">
+                <p class="bold center">Игры</p>
+                <p>Как человек, который разрабатывает игры, может не любить играть? Вот и я не знаю. </p>
+                <p>Среди игр выделю свои любимые: osu!, Soul Knight, Stardew Valley, Dota 2, Euro Truck Simulator 2.</p>
+            </section>
+            <section class="card small-card justify">
+                <img class="box margin-auto hobbies" src="static/assets/coding.png" alt="hobbies3">
+                <p class="bold center">Разработка</p>
+                <p>В свободное от работы время люблю пробовать что-то новое, не обязательно связанное с игровой сферой.</p>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>

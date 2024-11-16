@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Review this part and modify it to your liking -->
+    <meta name="description" content="Sample text for portfolio template meta tag">
+    <meta name="keywords" content="Sample text for portfolio template meta tag">
+    <meta name="author" content="Sample text for portfolio template meta tag">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- This page benefits from the main css and also from the about-me css, that is why all 3 is linked -->
+    <link rel="stylesheet" type="text/css" href="style-about-me.css">
+    <link rel="stylesheet" type="text/css" href="style-portfolio.css">
+    <!-- font for the quote -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <!-- font for the body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <!-- font for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="sticky">
+        <label for="drop" class="toggle" id="main-toggle">
+            <span class="nav-icon"></span>
+        </label>
+        <input type="checkbox" id="drop">
+        <ul class="main-nav">
+            <li><a href="index.html">Домой</a></li>
+            <li><a href="about-me.html">Обо мне</a></li>
+            <li><a href="skill-set.html">Навыки</a></li>
+            <li><a href="portfolio.html">Проекты</a></li>
+            <li><a href="index.html#contact-me">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Use align center accordingly as it my center vertically the image or the text. Or if you do not want to use it at all, then just delete it -->
+    <!-- project1 -->
+    <section class="grid-system-2 w-900 padding">
+        <section class="justify align-center">
+            <h3 class="main-title padding-top">Western Sniper</h3>
+            <p>Текущий проект</p>
+            <p>Гиперказуальная игра, в которой ты играешь за снайпера, задача которого уничтожить всех бандитов из различного оружия для того, чтобы пройти уровень.</p>
+            <p>Проект находится в стадии активной разработки.</p>
+            <p class="padding-top"><a href="projects/western-sniper.html" class="button-outline">Подробнее</a></p>
+        </section>
+        <section class="center">
+            <p><a href="projects/western-sniper.html"><img class="max-width" src="static/assets/project2.png" alt="project1"></a>
+        </section>
+    </section>
+
+    <!-- project2 -->
+    <section class="grid-system-2 w-900 padding">
+        <section class="justify align-center">
+            <h3 class="main-title padding-top">Diamond Digger</h3>
+            <p>Текущий проект</p>
+            <p>Гиперказуальная игра, в которой необходимо комбинировать и улучшать кирки для того, чтобы разрушить все блоки на уровне.</p>
+            <p>Проект находится на стадии публикации в Яндекс.Игры.</p>
+            <p class="padding-top"><a href="projects/diamond-digger.html" class="button-outline">Подробнее</a></p>
+        </section>
+        <section class="center padding-top align-center">
+            <p><a href="projects/diamond-digger.html"><img class="max-width" src="static/assets/project2.png" alt="project2"></a></p>
+        </section>
+    </section>
+
+    <!-- project3 -->
+    <section class="grid-system-2 w-900 padding">
+        <section class="justify">
+            <h3 class="main-title padding-top">Specifications Tool</h3>
+            <p>Текущий проект</p>
+            <p>Проект, в котором я занимаюсь разработкой Editor-инструментария для быстрой и удобной работы со ScriptableObjects в Unity. В нем я так же изучаю возможности Roslyn.</p>
+            <p class="center">
+                <span class="bold colorful-letter"><a class="link" href="https://github.com/av6eev/SpecificationsTool"
+                        target="_blank">GitHub</a></span>
+            </p>
+            <p class="padding-top"><a href="projects/specifications-tool.html" class="button-outline">Подробнее</a></p>
+        </section>
+        <section class="center">
+            <p><a href="projects/specifications-tool.html"><img class="max-width" src="static/assets/project2.png" alt="project3"></a>
+        </section>
+    </section>
+
+    <!-- project3 -->
+    <section class="grid-system-2 w-900 padding">
+        <section class="justify">
+            <h3 class="main-title padding-top">Space Adventure</h3>
+            <p>Тестовый проект</p>
+            <p>Прототип со следующими механиками: zero-gravity управление кораблем, система чанков и генерация астероидов в них. Было интересно попробовать реализовать кластеризацию данных и визуально оптимизировать проект.</p>
+            <p class="center">
+                <span class="bold colorful-letter"><a class="link" href="https://github.com/av6eev/SpaceAdventure"
+                                                      target="_blank">GitHub</a></span>
+                <span class="bold colorful-letter"><a class="link" href="https://youtu.be/91zlT1Dhywk"
+                                                      target="_blank">Demo</a></span>
+            </p>
+            <p class="padding-top"><a href="projects/space-adventure.html" class="button-outline">Подробнее</a></p>
+        </section>
+        <section class="center">
+            <p><a href="projects/space-adventure.html"><img class="max-width" src="static/assets/project2.png" alt="project3"></a>
+        </section>
+    </section>
+
+    <!-- project3 -->
+    <section class="grid-system-2 w-900 padding">
+        <section class="justify">
+            <h3 class="main-title padding-top">Space Adventure Library</h3>
+            <p>Вспомогательный проект</p>
+            <p>Своя библиотека, которая содержит некоторый базовый набор функционала для быстрого прототипирования игр.</p>
+            <p class="center">
+                <span class="bold colorful-letter"><a class="link" href="https://github.com/av6eev/SpaceAdventureLib"
+                                                      target="_blank">GitHub</a></span>
+            </p>
+        </section>
+        <section class="center">
+            <p><a href="projects/specifications-tool.html"><img class="max-width" src="static/assets/project2.png" alt="project3"></a>
+        </section>
+    </section>
+
+    <!-- project3 -->
+    <section class="grid-system-2 w-900 padding">
+        <section class="justify">
+            <h3 class="main-title padding-top">Asteroids</h3>
+            <p>Начальный проект</p>
+            <p>Игра про летящий космический корабль, который уничтожает астероиды. Реализована под Windows и Android. Референсом проекта является знаменитая аркадная игра Asteroids.</p>
+            <p class="center">
+                <span class="bold colorful-letter"><a class="link" href="https://github.com/av6eev/Asteroids"
+                                                      target="_blank">GitHub</a></span>
+                <span class="bold colorful-letter"><a class="link" href="https://youtu.be/5qbKBuo34rc"
+                                                      target="_blank">Demo</a></span>
+            </p>
+            <p class="padding-top"><a href="projects/asteroids.html" class="button-outline">Подробнее</a></p>
+        </section>
+        <section class="center">
+            <p><a href="projects/asteroids.html"><img class="max-width" src="static/assets/project2.png" alt="project3"></a>
+        </section>
+    </section>
+
+    <!-- project3 -->
+    <section class="grid-system-2 w-900 padding">
+        <section class="justify">
+            <h3 class="main-title padding-top">Fight in the gloom</h3>
+            <p>Начальный проект</p>
+            <p>Пошаговая игра-файтер для двоих. Главная цель - сокрушить соперника на арене, используя лишь реакции в Discord чате.</p>
+            <p class="center">
+                <span class="bold colorful-letter"><a class="link" href="https://github.com/av6eev/educational-project-3"
+                                                      target="_blank">GitHub</a></span>
+            </p>
+            <p class="padding-top"><a href="projects/fitg.html" class="button-outline">Подробнее</a></p>
+        </section>
+        <section class="center">
+            <p><a href="projects/fitg.html"><img class="max-width" src="static/assets/project2.png" alt="project3"></a>
+        </section>
+    </section>
+
+    <!-- project3 -->
+    <section class="grid-system-2 w-900 padding">
+        <section class="justify">
+            <h3 class="main-title padding-top">EP-4</h3>
+            <p>Начальный проект</p>
+            <p>Прототип со следующими механиками: заполнение пола по ячейкам, заданным в эдиторе; выбор и размещение зданий по сетке; диалоговая система; переключение этажей у строения.</p>
+            <p class="center">
+                <span class="bold colorful-letter"><a class="link" href="https://github.com/av6eev/educational-project-4"
+                                                      target="_blank">GitHub</a></span>
+            </p>
+            <p class="padding-top"><a href="projects/ep4.html" class="button-outline">Подробнее</a></p>
+        </section>
+        <section class="center">
+            <p><a href="projects/ep4.html"><img class="max-width" src="static/assets/project2.png" alt="project3"></a>
+        </section>
+    </section>
+</body>
+
+</html>
